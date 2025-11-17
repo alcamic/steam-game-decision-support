@@ -269,11 +269,8 @@ function generateDecisionMatrix() {
         let defaultType = 'benefit';
         
         if (criterionLower.includes('harga') || criterionLower.includes('price') || 
-            criterionLower.includes('cost') || criterionLower.includes('biaya')) {
-            defaultType = 'cost';
-        }
-        
-        if (criterionLower.includes('ram') || criterionLower.includes('cpu') || criterionLower.includes('gpu')) {
+            criterionLower.includes('cost') || criterionLower.includes('biaya') ||
+            criterionLower.includes('ram') || criterionLower.includes('cpu') || criterionLower.includes('gpu')) {
             defaultType = 'cost';
         }
 

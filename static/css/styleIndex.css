@@ -49,6 +49,24 @@ h3 {
     border: 1px solid #000;
 }
 
+.description ul {
+    list-style-position: inside;
+    padding-left: 10px; 
+    margin-bottom: 10px; 
+    margin-top: 5px;
+}
+
+.description li {
+    color: #c7d5e0; 
+    line-height: 1.6; 
+    margin-bottom: 8px; 
+}
+
+.description li::marker {
+    color: #66c0f4; 
+    font-weight: bold;
+}
+
 .description h3 {
     color: #66c0f4;
     margin-bottom: 10px;
