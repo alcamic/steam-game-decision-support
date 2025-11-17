@@ -273,8 +273,8 @@ function generateDecisionMatrix() {
             defaultType = 'cost';
         }
         
-        if (criterionLower.includes('ram')) {
-            defaultType = 'benefit';
+        if (criterionLower.includes('ram') || criterionLower.includes('cpu') || criterionLower.includes('gpu')) {
+            defaultType = 'cost';
         }
 
         typeHtml += `
